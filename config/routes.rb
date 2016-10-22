@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'items#index'
+  resources :items, only: [:index, :new]
+  root to: 'items#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
