@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :items, only: [:index, :new, :create, :edit, :destroy]
+  resources :items, only: [:index, :new, :create, :edit, :destroy, :update]
   root to: 'items#index'
 
   # Example of regular route:

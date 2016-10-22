@@ -2,6 +2,7 @@
 <h3>List of all todo items</h3>
 <% @items.each do |item| %>
 	<%= item.title %>
-	<%= item.description %></br></br>
+	<%= item.description %>
+	<%= link_to 'Edit', edit_item_path(item.id) %></br></br>
 <% end %>
 <%= link_to 'New', :action => 'new' %>

@@ -1,0 +1,6 @@
+<h1>Edit List</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Delete', item_path(@item.id), method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to 'Back', :action => 'index' %>
